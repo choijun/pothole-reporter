@@ -9,6 +9,7 @@
   <meta name="author" content="manduu">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,6 +19,13 @@
 <body>
   <script src="js/scripts.js"></script>
   hello manddy
-  <input type="file" accept="image/*;capture=camera">
+  <input id="take-picture" type="file" accept="image/*" capture="camera">
+  <h2>Preview:</h2>
+  <div id="picplace">
+    <img src="" alt="" id="show-picture">
+  </div>
+
+  <div id="error"></div>
+  <div id="coords"></div>
 </body>
 </html>
